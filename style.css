@@ -1,0 +1,302 @@
+@font-face {
+  font-family: Inter-Medium;
+  src: url(fonts/Inter/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(fonts/Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(fonts/Inter/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Inter-Light;
+  src: url(fonts/Inter/Inter-Light.ttf);
+}
+
+body {
+  background-image: url(image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: Inter-Medium;
+}
+
+
+.app_wrapper{
+  width: 550px;
+  margin: 20px auto;
+  /* background: #ffffff63; */
+  text-align: center;
+  /* backdrop-filter: blur(20px); */
+  padding: 20px;
+  height: 500px;
+  /* border: 3px solid #ffffff70; */
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.383);
+  border: 6px solid #000;
+  box-shadow: 30px 30px 40px -10px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 18px;
+}
+.swal-modal {
+  background: rgba(255, 255, 255, 0.29);
+  box-shadow: 30px 30px 40px -10px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 18px;
+  
+}
+.swal-title,.swal-text{
+  color: #ffffffb2;
+}
+.swal-icon--error__line,.swal-icon--error{
+  border-color:#ffffffb2;
+}
+button.swal-button.swal-button--confirm {
+  background: rgba(255, 255, 255, 0.36);
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 5px 11px;
+  margin-top: 15px;
+}
+.searchBox {
+  border: 1px solid;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.main_form {
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 50px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffffb2;
+}
+
+input#city {
+  padding: 5px;
+  width: 80%;
+  border: none;
+  font: 18px;
+  font-family: Inter-Regular;
+  padding-left: 15px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+.img {
+  width: 20%;
+}
+
+.img img {
+  width: 22px;
+  margin-top: 5px;
+}
+
+.navbar img {
+  width: 25px;
+}
+
+.daysDate {
+  text-align: left;
+}
+
+.weather_temp {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+div#abc h4 {
+  font-size: 26px;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #313341;
+  margin-bottom: 0;
+}
+
+#abc .date {
+  color: #576574;
+  font-family: Inter-Light;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1.cen {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 52px;
+}
+
+#abc .day {
+  font-family: Inter-Regular;
+  color: #000;
+}
+
+.weather_img {
+  width: 60%;
+}
+
+.weather_img img {
+  width: 100px;
+}
+
+.temp {
+  width: 40%;
+}
+
+span.tempF {
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #ddd;
+  color: #576574d2;
+}
+
+.temp p {
+  margin-top: -30px;
+  color: #303345 !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+sup {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #303345;
+  ;
+}
+
+.forecast .one {
+  height: 38px;
+  background: rgba(255, 255, 255, 0.36);
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 5px 11px;
+  margin-top: 15px;
+}
+.one {
+  display: flex;
+  align-items: center;
+}
+.img_weather {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.img_weather img {
+  margin-top: 12px;
+  margin-right: 10px;
+  width: 40px;
+  margin-top: -1px;
+}
+.calculate {
+  width: 30%;
+}
+.img_weather span,.calculate p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 8px;
+}
+@media screen and (max-width:1024px) {
+  
+  body{
+      height: 100vh;
+  }
+  .app_wrapper {
+      width: 50%;
+      margin-top: 5%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  
+  .app_wrapper {
+      width: 55%;
+  }
+  .swal-modal {
+      width: 70%;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .app_wrapper {
+      width: 80%;
+      border: none;
+  }
+  
+}
+
+@media screen and (max-width:320px) {
+  .app_wrapper {
+      width: 85%;
+  }
+  
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader{
+  display: none;
+}
+
